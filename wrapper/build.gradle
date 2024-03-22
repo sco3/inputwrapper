@@ -1,0 +1,25 @@
+plugins {
+	id "java"
+	id "application"
+}
+
+group = "com.ibm.rna"
+version = "1.0.0-SNAPSHOT"
+
+repositories {
+	flatDir {
+		dirs "lib"
+	}
+}
+
+dependencies {
+	testImplementation "junit:junit:4.13.2"
+	implementation files("lib/reader-1.0.0-SNAPSHOT.jar")
+}
+
+
+application {
+	mainClass = 'sco3.github.com.Wrapper'
+}
+
+
