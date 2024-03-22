@@ -1,0 +1,13 @@
+plugins {
+	id "java"
+	id "application"
+}
+
+group = "sco3.github.com"
+version = "1.0.0-SNAPSHOT"
+
+application {
+	mainClass = 'sco3.github.com.Reader'
+}
+
+
